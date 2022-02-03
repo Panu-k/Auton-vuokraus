@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autohaku</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="searchFields" id="searchFields">
+        <fieldset>
+            <legend>
+                <h3>Autohaku</h3>
+            </legend>
+            <div class="searchGrid">
+                <label for="id">Id: </label>
+                <input type="text" name="id" id="id">
+                <label for="brand">Brand: </label>
+                <input type="text" name="brand" id="brand">
+         
+            </div>
+            <div>
+                <input type="button" value="AutoHakuuuuu" id="searchBtn" class="searchBtn">
+                <input type="button" value="Lisää auto" id="addCarBtn" class="searchBtn" onclick="enableBtn();">
+                
+            </div>
+
+        </fieldset>
+    </div>
+
+    <div class="addStatusDiv">
+        <p id="addStatus" style="display: none;"></p>
+    </div>
+
+    <div class="dataTable" id="dataTable">
+        <table class="data" id="data">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Brand</th>
+                    <th>Model</th>
+                    <th>Year</th>
+                    <th>Transmission</th>
+                    <th>AirCondition</th>
+                    <th>Colour</th>
+                    <th>Picture</th>
+                    <th>Poista</th>
+                
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="addCarDialog" id="addCarDialog" title="Auton lisäys">
+        <div class="addCarDiv" id="addCarDiv">
+            <form class="form2">
+                <fieldset style="margin-bottom: 1rem;">
+                    <legend>Auton tiedot</legend>
+                    <div class="gridContainer">
+                        <label for="carBrand">Brand</label>
+                        <input type="text" name="carBrand" id="carBrand" value="">
+                        <label for="carModel">Model</label>
+                        <input type="text" name="carModel" id="carModel">
+                        <label for="carYear">Year</label>
+                        <input type="text" name="carYear" id="carYear">
+                        <label for="carTransmission">Transmission</label>
+                        <input type="text" name="carTransmission" id="carTransmission">
+                        <label for="carAircondition">AirCondition</label>
+                        <input type="text" name="carAircondition" id="carAircondition">
+                        <label for="carColour">Colour</label>
+                        <input type="text" name="carColour" id="carColour">
+                        <label for="carPicture">Picture</label>
+                        <input type="text" name="carPicture" id="carPicture">
+                    </div>
+                </fieldset>
+                <p id="warning" class="warning">Kaikki kentät ovat pakollisia!</p>
+                <input type="submit" value="Lisää" id="addCarSubmit">
+                <input type="reset" value="Tyhjennä" id="resetcarform">
+                
+                
+
+            </form>
+            
+        </div>
+    </div>
+
+    
+
+</body>
+</html>

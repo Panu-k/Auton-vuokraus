@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asiakashaku</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="./script2.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="searchFields" id="searchFields">
+        <fieldset>
+            <legend>
+                <h3>Asiakashaku</h3>
+            </legend>
+            <div class="searchGrid2">
+                <label for="custid">Id: </label>
+                <input type="text" name="custid" id="custid">
+                <label for="nimi">Name: </label>
+                <input type="text" name="nimi" id="nimi">
+         
+            </div>
+            <div>
+                <input type="button" value="AsiakasHakuuuuu" id="searchBtn2" class="searchBtn2">
+                <input type="button" value="Lisää asiakas" id="addCustBtn" class="searchBtn2" onclick="enableBtn();">
+                
+            </div>
+
+        </fieldset>
+    </div>
+
+    <div class="dataTable2" id="dataTable2">
+        <table class="data2" id="data2">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>City</th>
+                    <th>Zipcode</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Poista</th>
+               
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="addCustomerDialog" id="addCustomerDialog" title="Asiakkaan lisäys">
+        <div class="addCustomerDiv" id="addCustomerDiv">
+            <form class="form3">
+                <fieldset style="margin-bottom: 1rem;">
+                    <legend>Asiakkaan tiedot</legend>
+                    <div class="gridContainer">
+                        <label for="customerName">Name</label>
+                        <input type="text" name="customerName" id="customerName" value="">
+                        <label for="customerCity">City</label>
+                        <input type="text" name="customerCity" id="customerCity">
+                        <label for="customerZipcode">Zipcode</label>
+                        <input type="text" name="customerZipcode" id="customerZipcode">
+                        <label for="customerEmail">Email</label>
+                        <input type="text" name="customerEmail" id="customerEmail">
+                        <label for="customerPassword">Password</label>
+                        <input type="text" name="customerPassword" id="customerPassword">
+                       
+                    </div>
+                </fieldset>
+                <p id="warning" class="warning">Kaikki kentät ovat pakollisia!</p>
+                <input type="submit" value="Lisää" id="addCustomerSubmit">
+                <input type="reset" value="Tyhjennä" id="resetcustomerform">
+                
+                
+
+            </form>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
